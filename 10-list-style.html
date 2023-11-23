@@ -13,9 +13,12 @@
         color: brown;
       }
 
-      h2,
-      h3 {
+      h2 {
         color: green;
+      }
+
+      h3 {
+        color: blueviolet;
       }
 
       hr {
@@ -24,75 +27,103 @@
         border-radius: 10px;
       }
 
-      .hover-para:hover {
-        color: green;
-        font-size: 30px;
+      .ul {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 10px;
       }
 
-      .hover-img {
-        width: 300px;
-        height: 300px;
-      }
-
-      .hover-img:hover {
-        width: 400px;
-        height: 400px;
-        border-radius: 30px;
-        border: 5px solid darkblue;
-      }
-
-      .cursor {
-        background-color: lightcyan;
-        color: black;
-        text-align: center;
-        padding: 5px;
+      .ul li {
+        color: red;
         font-size: 18px;
-        margin: 10px 50px;
+      }
+
+      .ol {
+        background-color: lightgreen;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .ol li {
+        color: firebrick;
+        font-size: 18px;
       }
     </style>
   </head>
   <body>
     <h1>List Styling</h1>
 
-    <h2>Hovers</h2>
-    <p class="hover-para">
-      Hovers on Paragraph Color Change and Increase Font Size
-    </p>
+    <div class="ul">
+      <h2>Unordered List</h2>
 
-    <img src="./src/background.jpg" class="hover-img" />
+      <h3>Default List Style : DISC</h3>
+      <ul style="list-style-type: disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <h3>Default List Style : CIRCLE</h3>
+      <ul style="list-style-type: circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <h3>Default List Style : SQUARE</h3>
+      <ul style="list-style-type: square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <h3>Default List Style : NONE</h3>
+      <ul style="list-style-type: none">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
 
     <hr />
 
-    <h2>Cursors</h2>
-    <div class="cursor" style="cursor: pointer">Cursor : Pointer</div>
-    <div class="cursor" style="cursor: alias">Cursor : Alias</div>
-    <div class="cursor" style="cursor: auto">Cursor : Auto</div>
-    <div class="cursor" style="cursor: all-scroll">Cursor : All Scroll</div>
-    <div class="cursor" style="cursor: col-resize">Cursor : Col Resize</div>
-    <div class="cursor" style="cursor: crosshair">Cursor : Cross Hair</div>
-    <div class="cursor" style="cursor: default">Cursor : Default</div>
-    <div class="cursor" style="cursor: copy">Cursor : Copy</div>
-    <div class="cursor" style="cursor: move">Cursor : Move</div>
-    <div class="cursor" style="cursor: e-resize">Cursor : E Resize</div>
-    <div class="cursor" style="cursor: ew-resize">Cursor : EW Resize</div>
-    <div class="cursor" style="cursor: n-resize">Cursor : N Resize</div>
-    <div class="cursor" style="cursor: ne-resize">Cursor : NE Resize</div>
-    <div class="cursor" style="cursor: nw-resize">Cursor : NW Resize</div>
-    <div class="cursor" style="cursor: se-resize">Cursor : SE Resize</div>
-    <div class="cursor" style="cursor: s-resize">Cursor : S Resize</div>
-    <div class="cursor" style="cursor: sw-resize">Cursor : SW Resize</div>
-    <div class="cursor" style="cursor: w-resize">Cursor : W Resize</div>
-    <div class="cursor" style="cursor: wait">Cursor : Wait</div>
-    <div class="cursor" style="cursor: text">Cursor : Text</div>
-    <div class="cursor" style="cursor: help">Cursor : Help</div>
-    <div class="cursor" style="cursor: progress">Cursor : Progress</div>
-    <div class="cursor" style="cursor: no-drop">Cursor : No Drop</div>
-    <div class="cursor" style="cursor: not-allowed">Cursor : Not Allowed</div>
-    <div class="cursor" style="cursor: vertical-text">
-      Cursor : Vertical Text
+    <div class="ol">
+      <h2>Ordered List</h2>
+
+      <h3>Default List Style : DECIMAL</h3>
+      <ol style="list-style-type: decimal">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <h3>Default List Style : DECIMAL LEADING ZERO</h3>
+      <ol style="list-style-type: decimal-leading-zero">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <h3>Default List Style : LOWER-ALPHA</h3>
+      <ol style="list-style-type: lower-alpha">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <h3>Default List Style : UPPER-ALPHA</h3>
+      <ol style="list-style-type: upper-alpha">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <h3>Default List Style : LOWER-ROMAN</h3>
+      <ol style="list-style-type: lower-roman">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <h3>Default List Style : UPPER-ROMAN</h3>
+      <ol style="list-style-type: upper-roman">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
     </div>
-    <div class="cursor" style="cursor: zoom-in">Cursor : Zoom In</div>
-    <div class="cursor" style="cursor: zoom-out">Cursor : Zoom Out</div>
 
     <hr />
   </body>
