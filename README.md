@@ -15,11 +15,6 @@ Master CSS with this comprehensive tutorial series organized by topics. Each sec
 10. [Hovers and Cursors](9-hovers-and-cursors.html) - Learn how to enhance user interactions with hovers and custom cursors.
 11. [List Style](10-list-style.html) - Explore different list styles in HTML.
 
-
-## Next Learning
-To continue your learning journey, head to the next topic:
-- **[JAVASCRIPT](Will Update Soon)**
-
 ## Getting Started
 
 1. Clone the repository:
@@ -33,6 +28,10 @@ To continue your learning journey, head to the next topic:
 
 - Basic understanding of HTML and CSS.
 - A code editor (e.g., Visual Studio Code, Sublime Text).
+
+## Next Learning
+To continue your learning journey, head to the next topic:
+- **[JAVASCRIPT](Will Update Soon)**
 
 ## Author
 
