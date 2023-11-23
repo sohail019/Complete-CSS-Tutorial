@@ -30,6 +30,7 @@ Master CSS with this comprehensive tutorial series organized by topics. Each sec
 9. [Box Model](08-box-model.html) - Understand the CSS box model for layout.
 10. [Hovers and Cursors](09-hovers-and-cursors.html) - Learn how to enhance user interactions with hovers and custom cursors.
 11. [List Style](10-list-style.html) - Explore different list styles in CSS.
+12. [Links](11-links.html) - Understand Some Concepts of Links Styling.
 
 ## Next Learning
 
