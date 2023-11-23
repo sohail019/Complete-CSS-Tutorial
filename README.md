@@ -21,7 +21,7 @@ Master CSS with this comprehensive tutorial series organized by topics. Each sec
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/HTML-Topics-Tutorial.git
+   git clone https://github.com/sohail019/Complete-CSS-Tutorial.git
    ```
 
 2. Navigate to each topic's file to access the corresponding tutorial.
