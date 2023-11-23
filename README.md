@@ -23,14 +23,13 @@ Master CSS with this comprehensive tutorial series organized by topics. Each sec
 2. [Colors](01-colors.html) - Learn about color representation in HTML and CSS.
 3. [Backgrounds](02-backgrounds.html) - Dive into background properties in CSS.
 4. [Borders](03-borders.html) - Learn how to style borders around elements.
-5. [Images](04-images.html) - Explore the use of images in HTML documents.
-6. [Videos](05-videos.html) - Understand how to embed videos in HTML pages.
+5. [Images](04-images.html) - Explore the use of images in CSS on HTML documents.
+6. [Videos](05-videos.html) - Understand how to style videos in HTML pages by CSS.
 7. [Fonts](06-fonts.html) - Learn about font properties and styling text.
-8. [Text Styling](07-text-styling.html) - Explore various ways to style text in HTML.
+8. [Text Styling](07-text-styling.html) - Explore various ways to style text in CSS.
 9. [Box Model](08-box-model.html) - Understand the CSS box model for layout.
 10. [Hovers and Cursors](09-hovers-and-cursors.html) - Learn how to enhance user interactions with hovers and custom cursors.
-11. [List Style](10-list-style.html) - Explore different list styles in HTML.
-
+11. [List Style](10-list-style.html) - Explore different list styles in CSS.
 
 ## Next Learning
 
