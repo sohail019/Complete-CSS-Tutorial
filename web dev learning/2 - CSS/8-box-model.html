@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Property 8 - Box Model</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      h1 {
+        color: brown;
+      }
+
+      h2,
+      h3 {
+        color: green;
+      }
+
+      hr {
+        height: 5px;
+        background-color: black;
+        border-radius: 10px;
+      }
+      .padding p {
+        color: sienna;
+        font-size: 20px;
+      }
+
+      .margin p {
+        color: teal;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+
+    <div class="padding">
+      <h2>Padding</h2>
+      <p style="padding: 30px; border: 2px solid red; text-align: center">
+        Padding Method 1 : One Value - 30px (Top, Right, Bottom and Left)
+      </p>
+      <p
+        style="padding: 40px 100px; border: 2px solid green; text-align: center"
+      >
+        Padding Method 2 : Two Values - 40px 100px [Vertical Padding (Top
+        Bottom) and Horizontal Padding (Right Left)]
+      </p>
+      <p
+        style="
+          padding: 10px 20px 30px 40px;
+          border: 2px solid blue;
+          text-align: center;
+        "
+      >
+        Padding Method 3 : Four Values - 10px 20px 30px 40px (Top, Right, Bottom
+        and Left)
+      </p>
+    </div>
+    <hr />
+
+    <div class="margin">
+      <h2>Margin</h2>
+      <p style="margin: 30px; border: 2px solid red; text-align: center">
+        Margin Method 1 : One Value - 30px (Top, Right, Bottom and Left)
+      </p>
+      <p
+        style="margin: 40px 100px; border: 2px solid green; text-align: center"
+      >
+        Margin Method 2 : Two Values - 40px 100px [Vertical Padding (Top Bottom)
+        and Horizontal Padding (Right Left)]
+      </p>
+      <p
+        style="
+          margin: 10px 20px 30px 40px;
+          border: 2px solid blue;
+          text-align: center;
+        "
+      >
+        Margin Method 3 : Four Values - 10px 20px 30px 40px (Top, Right, Bottom
+        and Left)
+      </p>
+    </div>
+
+    <hr />
+  </body>
+</html>
