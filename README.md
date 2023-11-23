@@ -2,6 +2,21 @@
 
 Master CSS with this comprehensive tutorial series organized by topics. Each section focuses on a specific aspect, providing hands-on exercises to reinforce your learning.
 
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sohail019/Complete-CSS-Tutorial.git
+   ```
+
+2. Navigate to each topic's file to access the corresponding tutorial.
+
+## Prerequisites
+
+- Basic understanding of HTML.
+- A code editor (e.g., Visual Studio Code, Sublime Text).
+
 ## Table of Contents
 
 1. [Specificity](0-specificity.html) - Understand CSS specificity and its importance.
@@ -16,20 +31,6 @@ Master CSS with this comprehensive tutorial series organized by topics. Each sec
 10. [Hovers and Cursors](09-hovers-and-cursors.html) - Learn how to enhance user interactions with hovers and custom cursors.
 11. [List Style](10-list-style.html) - Explore different list styles in HTML.
 
-## Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/sohail019/Complete-CSS-Tutorial.git
-   ```
-
-2. Navigate to each topic's file to access the corresponding tutorial.
-
-## Prerequisites
-
-- Basic understanding of HTML and CSS.
-- A code editor (e.g., Visual Studio Code, Sublime Text).
 
 ## Next Learning
 
