@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout : Overflow , Float and Clear</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      h1 {
+        color: brown;
+      }
+
+      h2 {
+        color: green;
+      }
+
+      h3 {
+        color: blueviolet;
+      }
+
+      hr {
+        height: 5px;
+        background-color: black;
+        border-radius: 10px;
+      }
+
+      .overflow {
+        background-color: aqua;
+        border: 2px solid brown;
+        width: 300px;
+        height: 200px;
+      }
+
+      .visible {
+        overflow: visible;
+        margin-bottom: 200px;
+      }
+
+      .hidden {
+        overflow: hidden;
+      }
+
+      .scroll {
+        overflow: scroll;
+      }
+
+      .auto {
+        overflow: auto;
+      }
+
+      .float {
+        background-color: pink;
+        border: 2px solid brown;
+        height: 300px;
+      }
+      .float-left {
+        width: 300px;
+        float: left;
+      }
+      .float-right {
+        width: 300px;
+        float: right;
+      }
+      .float-none {
+        width: 300px;
+        float: none;
+      }
+
+      .float-inherit {
+        width: 300px;
+        float: inherit;
+      }
+
+        .clear {
+            background-color: pink;
+            border: 2px solid brown;
+            height: 300px;
+            overflow: auto;
+        }
+
+        .clear-left {
+            width: 300px;
+            float: left;
+            clear: left;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Layout : Overflow , Float and Clear</h1>
+
+    <h2>Overflow</h2>
+
+    <p>
+      The overflow property specifies what should happen if content overflows an
+      element's box.
+    </p>
+
+    <div class="overflow visible">
+      <h3>Overflow Visible</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+        exercitationem facilis eos natus quod hic necessitatibus est mollitia id
+        ex maiores quae atque harum vitae accusantium voluptate reiciendis,
+        voluptas iusto dolorum fugiat excepturi dolor odio. Ab, itaque
+        blanditiis optio fugiat quod distinctio, necessitatibus aliquam porro
+        nulla, ratione quibusdam facere dolore! Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Minima ut eveniet iste, voluptas molestias
+        aut corrupti amet autem officia, pariatur voluptatibus illum quae
+        necessitatibus non unde totam. Beatae, nam deserunt sunt nobis vitae ad
+        repellendus accusantium deleniti ut tempore corrupti illo nihil commodi
+        iure voluptate? Pariatur deserunt ratione quibusdam, reiciendis velit
+        magni.
+      </p>
+    </div>
+    <hr />
+    <div class="overflow hidden">
+      <h3>Overflow Hidden</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+        exercitationem facilis eos natus quod hic necessitatibus est mollitia id
+        ex maiores quae atque harum vitae accusantium voluptate reiciendis,
+        voluptas iusto dolorum fugiat excepturi dolor odio. Ab, itaque
+        blanditiis optio fugiat quod distinctio, necessitatibus aliquam porro
+        nulla, ratione quibusdam facere dolore! Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Minima ut eveniet iste, voluptas molestias
+        aut corrupti amet autem officia, pariatur voluptatibus illum quae
+        necessitatibus non unde totam. Beatae, nam deserunt sunt nobis vitae ad
+        repellendus accusantium deleniti ut tempore corrupti illo nihil commodi
+        iure voluptate? Pariatur deserunt ratione quibusdam, reiciendis velit
+        magni.
+      </p>
+    </div>
+
+    <hr />
+    <div class="overflow scroll">
+      <h3>Overflow Scroll</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+        exercitationem facilis eos natus quod hic necessitatibus est mollitia id
+        ex maiores quae atque harum vitae accusantium voluptate reiciendis,
+        voluptas iusto dolorum fugiat excepturi dolor odio. Ab, itaque
+        blanditiis optio fugiat quod distinctio, necessitatibus aliquam porro
+        nulla, ratione quibusdam facere dolore! Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Minima ut eveniet iste, voluptas molestias
+        aut corrupti amet autem officia, pariatur voluptatibus illum quae
+        necessitatibus non unde totam. Beatae, nam deserunt sunt nobis vitae ad
+        repellendus accusantium deleniti ut tempore corrupti illo nihil commodi
+        iure voluptate? Pariatur deserunt ratione quibusdam, reiciendis velit
+        magni.
+      </p>
+    </div>
+
+    <hr />
+    <div class="overflow auto">
+      <h3>Overflow Auto</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+        exercitationem facilis eos natus quod hic necessitatibus est mollitia id
+        ex maiores quae atque harum vitae accusantium voluptate reiciendis,
+        voluptas iusto dolorum fugiat excepturi dolor odio. Ab, itaque
+        blanditiis optio fugiat quod distinctio, necessitatibus aliquam porro
+        nulla, ratione quibusdam facere dolore! Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Minima ut eveniet iste, voluptas molestias
+        aut corrupti amet autem officia, pariatur voluptatibus illum quae
+        necessitatibus non unde totam. Beatae, nam deserunt sunt nobis vitae ad
+        repellendus accusantium deleniti ut tempore corrupti illo nihil commodi
+        iure voluptate? Pariatur deserunt ratione quibusdam, reiciendis velit
+        magni.
+      </p>
+    </div>
+    <hr />
+    <hr />
+
+    <h2>Float</h2>
+    <p>
+      The float property specifies whether or not an element should float.
+      <br />
+      <b>Note: Absolutely positioned elements ignores the float property!</b>
+    </p>
+
+    <div class="float">
+      <h3>Float Left</h3>
+      <img src="./src/background.jpg" alt="" class="float-left" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        perspiciatis neque iste, debitis quae earum, dolore animi impedit
+        doloremque magnam officiis incidunt suscipit at. Asperiores sunt enim
+        nesciunt quam explicabo, laudantium esse doloremque consectetur, illum
+        libero excepturi quia ratione provident numquam? Maxime distinctio enim
+        quae. Voluptatibus, aperiam odit. Eius, tempora. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Provident consectetur veritatis ut
+        optio architecto recusandae pariatur amet cum, consequuntur magnam,
+        aliquam eaque molestias inventore earum nulla nihil vitae ipsam iusto.
+        Enim tempora nobis sapiente fugiat possimus consectetur, velit, esse
+        ipsa magni, doloribus nihil voluptates asperiores inventore sequi
+        numquam provident molestias nam rem cum vel. Necessitatibus nostrum
+        doloribus sint in voluptates. Vel optio similique sed, officia illum eum
+        a quis quisquam adipisci cupiditate vitae blanditiis inventore.
+        Molestiae, minus maiores! Sunt quia blanditiis omnis sequi reiciendis
+        quis obcaecati, iste necessitatibus sapiente quibusdam?
+      </p>
+    </div>
+    <hr />
+    <div class="float">
+      <h3>Float Right</h3>
+      <img src="./src/background.jpg" alt="" class="float-right" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        perspiciatis neque iste, debitis quae earum, dolore animi impedit
+        doloremque magnam officiis incidunt suscipit at. Asperiores sunt enim
+        nesciunt quam explicabo, laudantium esse doloremque consectetur, illum
+        libero excepturi quia ratione provident numquam? Maxime distinctio enim
+        quae. Voluptatibus, aperiam odit. Eius, tempora. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Provident consectetur veritatis ut
+        optio architecto recusandae pariatur amet cum, consequuntur magnam,
+        aliquam eaque molestias inventore earum nulla nihil vitae ipsam iusto.
+        Enim tempora nobis sapiente fugiat possimus consectetur, velit, esse
+        ipsa magni, doloribus nihil voluptates asperiores inventore sequi
+        numquam provident molestias nam rem cum vel. Necessitatibus nostrum
+        doloribus sint in voluptates. Vel optio similique sed, officia illum eum
+        a quis quisquam adipisci cupiditate vitae blanditiis inventore.
+        Molestiae, minus maiores! Sunt quia blanditiis omnis sequi reiciendis
+        quis obcaecati, iste necessitatibus sapiente quibusdam?
+      </p>
+    </div>
+    <hr />
+    <div class="float">
+      <h3>Float None</h3>
+      <img src="./src/background.jpg" alt="" class="float-none" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        perspiciatis neque iste, debitis quae earum, dolore animi impedit
+        doloremque magnam officiis incidunt suscipit at. Asperiores sunt enim
+        nesciunt quam explicabo, laudantium esse doloremque consectetur, illum
+        libero excepturi quia ratione provident numquam? Maxime distinctio enim
+        quae. Voluptatibus, aperiam odit. Eius, tempora. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Provident consectetur veritatis ut
+        optio architecto recusandae pariatur amet cum, consequuntur magnam,
+        aliquam eaque molestias inventore earum nulla nihil vitae ipsam iusto.
+        Enim tempora nobis sapiente fugiat possimus consectetur, velit, esse
+        ipsa magni, doloribus nihil voluptates asperiores inventore sequi
+        numquam provident molestias nam rem cum vel. Necessitatibus nostrum
+        doloribus sint in voluptates. Vel optio similique sed, officia illum eum
+        a quis quisquam adipisci cupiditate vitae blanditiis inventore.
+        Molestiae, minus maiores! Sunt quia blanditiis omnis sequi reiciendis
+        quis obcaecati, iste necessitatibus sapiente quibusdam?
+      </p>
+    </div>
+    <hr />
+    <div class="float" style="margin: 100px 0">
+      <h3>Float Inherit</h3>
+      <img src="./src/background.jpg" alt="" class="float-inherit" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        perspiciatis neque iste, debitis quae earum, dolore animi impedit
+        doloremque magnam officiis incidunt suscipit at. Asperiores sunt enim
+        nesciunt quam explicabo, laudantium esse doloremque consectetur, illum
+        libero excepturi quia ratione provident numquam? Maxime distinctio enim
+        quae. Voluptatibus, aperiam odit. Eius, tempora. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Provident consectetur veritatis ut
+        optio architecto recusandae pariatur amet cum, consequuntur magnam,
+        aliquam eaque molestias inventore earum nulla nihil vitae ipsam iusto.
+        Enim tempora nobis sapiente fugiat possimus consectetur, velit, esse
+        ipsa magni, doloribus nihil voluptates asperiores inventore sequi
+        numquam provident molestias nam rem cum vel. Necessitatibus nostrum
+        doloribus sint in voluptates. Vel optio similique sed, officia illum eum
+        a quis quisquam adipisci cupiditate vitae blanditiis inventore.
+        Molestiae, minus maiores! Sunt quia blanditiis omnis sequi reiciendis
+        quis obcaecati, iste necessitatibus sapiente quibusdam?
+      </p>
+    </div>
+
+    <hr />
+    <hr />
+
+    <h2>Clear</h2>
+    <div class="clear">
+        <h3>Clear Left</h3>
+        <img src="./src/background.jpg" alt="" class="clear-left" />
+        <img src="./src/background.jpg" alt="" class="clear-left" />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            perspiciatis neque iste, debitis quae earum, dolore animi impedit
+            doloremque magnam officiis incidunt suscipit at. Asperiores sunt enim
+            nesciunt quam explicabo, laudantium esse doloremque consectetur, illum
+            libero excepturi quia ratione provident numquam? Maxime distinctio enim
+            quae. Voluptatibus, aperiam odit. Eius, tempora. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Provident consectetur veritatis ut
+            optio architecto recusandae pariatur amet cum, consequuntur magnam,
+            aliquam eaque molestias inventore earum nulla nihil vitae ipsam iusto.
+            Enim tempora nobis sapiente fugiat possimus consectetur, velit, esse
+            ipsa magni, doloribus nihil voluptates asperiores inventore sequi
+            numquam provident molestias nam rem cum vel. Necessitatibus nostrum
+            doloribus sint in voluptates. Vel optio similique sed, officia illum eum
+            a quis quisquam adipisci cupiditate vitae blanditiis inventore.
+            Molestiae, minus maiores! Sunt quia blanditiis omnis sequi reiciendis
+            quis obcaecati, iste necessitatibus sapiente quibusdam?
+        </p>
+        </div>
+
+<hr>
+
+    </div>
+  </body>
+</html>
