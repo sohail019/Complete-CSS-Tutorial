@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Concept : Pseudo Classes and Elements</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    h1 {
+      color: brown;
+    }
+
+    h2 {
+      color: green;
+    }
+
+    h3 {
+      color: blueviolet;
+    }
+
+    hr {
+      height: 5px;
+      background-color: black;
+      border-radius: 10px;
+    }
+
+    /* unvisited link */
+    a:link {
+      color: red;
+    }
+
+    /* visited link */
+    a:visited {
+      color: olive;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: green;
+    }
+
+    /* selected link */
+    a:active {
+      color: blue;
+    }
+
+    .tooltip-text {
+      display: none;
+      background-color: aquamarine;
+      padding: 20px;
+    }
+
+    .tooltip:hover .tooltip-text {
+      display: block;
+    }
+
+    .first-child p:first-child {
+      color: red;
+    }
+
+    /* Pseudo Elements */
+    /* First Line */
+    .first-line::first-line {
+      color: red;
+      font-variant: small-caps;
+      font-size: large;
+    }
+
+    /* First Letter */
+    .first-letter::first-letter {
+      color: blue;
+      font-size: xx-large;
+    }
+
+    /* Before */
+    .before::before {
+      content: "Before";
+      color: orangered;
+      font-size: x-large;
+    }
+
+    /* After */
+
+    .after::after{
+        content: "After";
+        color: maroon;
+        font-size: x-large;
+    }
+
+    /* Marker */
+
+    ::marker{
+        color: hotpink;
+        font-size: x-large;
+    }
+
+    /* Selection */
+    ::selection{
+        color: black;
+        background-color: gold;
+    }
+
+    /* Placeholder */
+    ::placeholder{
+        color: red;
+        font-size: large;
+    }
+
+    /* Spelling Error */
+    ::spelling-error{
+        text-decoration: wavy rebeccapurple;
+    }
+
+
+  </style>
+  <body>
+    <h1>Pseudo Classes and Elements</h1>
+
+    <h2>Anchor Pseudo Class</h2>
+
+    <p>
+      <b><a href="default.asp" target="_blank">This is a link</a></b>
+    </p>
+    <p>
+      <b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS
+      definition in order to be effective.
+    </p>
+    <p>
+      <b>Note:</b> a:active MUST come after a:hover in the CSS definition in
+      order to be effective.
+    </p>
+
+    <hr />
+
+    <h2>Simple Tooltip Hover</h2>
+    <div class="tooltip">
+      Hover over this div element to show the p element
+      <p class="tooltip-text">Tada! Here I am!</p>
+    </div>
+    <hr />
+    <h2>First Child</h2>
+    <div class="first-child">
+      <p>First Paragraph</p>
+      <p>Second Paragraph</p>
+      <p>Third Paragraph</p>
+      <div>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+      </div>
+    </div>
+
+    <hr />
+    <hr>
+
+    <h1>Pseudo Elements</h2>
+    <h2>First Line</h2>
+    <p class="first-line">
+      The ::first-line pseudo-element is used to add a special style to the
+      first line of a text.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam natus possimus suscipit optio ratione laudantium maiores obcaecati nihil nobis tenetur, quaerat dignissimos nulla animi saepe voluptatum architecto, atque adipisci!
+      Maxime iusto tempora tempore voluptatibus ducimus pariatur nulla alias quas dolores velit unde in voluptatem corrupti nihil nostrum odit doloremque, necessitatibus sunt provident? Aspernatur iure maxime iusto velit, unde aliquam.
+      Laborum, nulla doloribus nam earum repellendus eveniet consectetur esse, perferendis fugit quas at placeat animi assumenda deserunt commodi reiciendis voluptatibus cupiditate quis sint incidunt voluptate aspernatur. Accusamus amet atque ipsam!
+    </p>
+    <hr>
+    <h2>First Letter</h2>
+    <p class="first-letter">
+      The ::first-letter pseudo-element is used to add a special style to the
+      first letter of a text.
+    </p>
+    <hr>
+    <h2>Before</h2>
+    <p  class="before">
+      The ::before pseudo-element can be used to insert some content before the
+      content of an element.
+    </p>
+    <hr>
+    <h2>After</h2>
+    <p  class="after">
+      The ::after pseudo-element can be used to insert some content after the
+      content of an element.
+    </p>
+    <hr>
+    <h2>Marker</h2>
+    <p>
+        The ::marker pseudo-element can be used to style the bullet of a list
+      </p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </ul>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </ol>
+    <hr>
+    <h2 >Selection</h2>
+    <p class="selection">
+      The ::selection pseudo-element matches the portion of an element that is
+      selected by a user.
+    </p>
+    <hr>
+    <h2>Placeholder</h2>
+
+    <input type="text" placeholder="Type Name">
+    <hr>  
+    <h2>Spelling</h2>
+    <p contenteditable spellcheck="true">
+      My friends are coegdfgfddffbgning amd to the party tonight.
+    </p>
+<hr>
+
+
+  </body>
+</html>
