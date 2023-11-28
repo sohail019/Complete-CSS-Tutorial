@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Media Queries</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        color: white;
+      }
+
+      p {
+        font-size: 80px;
+      }
+
+      @media (min-width: 1601px) {
+        body {
+          background-color: seagreen;
+        }
+        p {
+          font-size: 7rem;
+        }
+      }
+
+      @media (min-width: 1201px) and (max-width: 1600px) {
+        body {
+          background-color: limegreen;
+        }
+        p {
+          font-size: 5rem;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 1200px) {
+        body {
+          background-color: red;
+        }
+
+        p {
+          font-size: 3rem;
+        }
+      }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        body {
+          background-color: lightsalmon;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 319px) {
+        body {
+          background-color: blue;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello</p>
+  </body>
+</html>
