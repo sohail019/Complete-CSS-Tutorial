@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Project 1 - Web Design Agency</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: aliceblue;
+      }
+
+      .header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 0;
+        margin: 0;
+        overflow: auto;
+        border-bottom: 2px solid black;
+      }
+
+      .logo {
+        color: black;
+        font-size: 2rem;
+        padding: 10px;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+
+      ul {
+        list-style: none;
+        text-align: center;
+      }
+
+      li {
+        color: black;
+        display: inline-block;
+        padding: 20px;
+        font-size: 1.2rem;
+      }
+
+      .head {
+        font-size: 2rem;
+      }
+
+      .head span {
+        color: blueviolet;
+      }
+
+      .card {
+        background-color: yellowgreen;
+        width: 45%;
+        border: 1px solid black;
+        display: inline-block;
+        margin-bottom: 90px;
+        box-shadow: 5px 5px 8px #888888;
+      }
+
+      .card p {
+        font-size: 1.5rem;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+
+      .card-image {
+        width: 300px;
+        float: left;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        clear: both;
+      }
+
+      @media (min-width: 688px) and (max-width: 850px) {
+        body {
+          background-color: aquamarine;
+        }
+
+        .header {
+          display: none;
+        }
+
+        .hamburger {
+          display: block;
+          background-color: black;
+          float: right;
+          right: 0;
+          position: fixed;
+          margin-right: 20px;
+          width: 50px;
+          height: 50px;
+        }
+
+        .title {
+          font-size: 4rem;
+          text-align: center;
+        }
+
+        .title span {
+          color: brown;
+        }
+
+        .card {
+          background-color: cadetblue;
+          width: 100%;
+          margin-bottom: 20px;
+          border-radius: 20px;
+        }
+
+        .card-image {
+          display: block;
+          width: 40%;
+          float: none;
+          margin: 0 auto;
+        }
+
+        .card p {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 689px) {
+        body {
+          background-color: seagreen;
+        }
+        .header {
+          display: none;
+        }
+
+        .hamburger {
+          display: block;
+          background-color: black;
+          float: right;
+          right: 0;
+          position: fixed;
+          margin-right: 20px;
+          width: 50px;
+          height: 50px;
+        }
+
+        .logo {
+          font-size: 1.5rem;
+          font-weight: 800;
+        }
+
+        .title {
+          font-size: 3.5rem;
+          color: white;
+          text-align: center;
+        }
+        .title span {
+          color: black;
+        }
+
+        .card {
+          width: 100%;
+          display: block;
+          background-color: greenyellow;
+          margin-bottom: 20px;
+          border-radius: 20px;
+        }
+
+        .card-image {
+          display: block;
+          float: none;
+          width: 60%;
+          margin: 0 auto;
+        }
+
+        .card p {
+          font-size: 1.2rem;
+          text-align: center;
+          font-weight: 600;
+        }
+
+        footer {
+          background-color: chartreuse;
+          color: black;
+          font-size: 1.2rem;
+          font-weight: 800;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    <div class="hamburger"></div>
+
+    <main>
+      <div class="head">
+        <h1 class="logo">Sohail Web Hub</h1>
+        <h1 class="title">
+          We are a <span>Creative</span> <br />
+          Design Agency
+        </h1>
+      </div>
+
+      <div>
+        <div class="left card">
+          <img
+            class="card-image"
+            src="./src/website.png"
+            alt="Website Agency 1"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iste?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius natus
+            sapiente ducimus et consequatur provident aperiam autem, nisi alias
+            deleniti. Quasi, laudantium? Dignissimos nobis illo sed dicta labore
+            excepturi porro.
+          </p>
+        </div>
+        <div class="right card">
+          <img
+            class="card-image"
+            src="./src/website.png"
+            alt="Website Agency 1"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iste?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius natus
+            sapiente ducimus et consequatur provident aperiam autem, nisi alias
+            deleniti. Quasi, laudantium? Dignissimos nobis illo sed dicta labore
+            excepturi porro.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy 2023 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
