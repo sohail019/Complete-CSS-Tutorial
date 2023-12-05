@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout : Grid Layout</title>
+    <script
+      src="https://kit.fontawesome.com/40a4d47432.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Each square should be 100px by 100px */
+      /* My colours for white: #f0d9b5, black: #b58863 */
+      .chess-container {
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      .white {
+        background-color: #f0d9b5;
+      }
+
+      .black {
+        background-color: #b58863;
+      }
+
+      /* i {
+        position: relative;
+        top: 15px;
+        width: 100%;
+        text-align: center;
+      } */
+
+      .white,
+      .black {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+      }
+
+      /* .tile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 10px;
+        width: 80px;
+        height: 80px;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>CSS - Grid</h1>
+    <h2>Grid Sizing</h2>
+    <!-- Grid Exercise -->
+    <h2>Chessboard Exercise</h2>
+    <div class="chess-container">
+      <div class="white">
+        <i class="fa-regular fa-chess-rook fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-knight fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-bishop fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-queen fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-king fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-bishop fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-knight fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-rook fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="black">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="white">
+        <i class="fa-regular fa-chess-pawn fa-4x"></i>
+      </div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="white"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="black"><i class="fa-solid fa-arrow-up fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-pawn fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-rook fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-knight fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-bishop fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-king fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-queen fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-bishop fa-4x"></i></div>
+      <div class="black"><i class="fa-regular fa-chess-knight fa-4x"></i></div>
+      <div class="white"><i class="fa-regular fa-chess-rook fa-4x"></i></div>
+    </div>
+  </body>
+</html>
