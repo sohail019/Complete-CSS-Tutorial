@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout : Flexbox</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        overflow-x: hidden;
+      }
+      h1 {
+        color: brown;
+      }
+
+      h2 {
+        color: green;
+      }
+
+      h3 {
+        color: blueviolet;
+        font-size: 20px;
+      }
+
+      hr {
+        height: 5px;
+        background-color: black;
+        border-radius: 10px;
+      }
+
+      .container {
+        display: flex;
+        gap: 10px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+        overflow: auto;
+        width: 90%;
+        height: 60vh;
+      }
+
+      .item {
+        width: 200px;
+        height: 100px;
+        font-size: 30px;
+        border: 1px solid green;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      .violet {
+        background-color: violet;
+      }
+      .indigo {
+        background-color: indigo;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .red {
+        background-color: red;
+      }
+
+      /* Justify Content */
+      .justify-end {
+        justify-content: flex-end;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .justify-space-between {
+        justify-content: space-between;
+      }
+      .justify-space-around {
+        justify-content: space-around;
+      }
+      .justify-space-evenly {
+        justify-content: space-evenly;
+      }
+
+      /* Align Items */
+      .align-items-stretch {
+        align-items: stretch;
+      }
+      .align-items-start {
+        align-items: flex-start;
+      }
+      .align-items-end {
+        align-items: flex-end;
+      }
+      .align-items-center {
+        align-items: center;
+      }
+      .align-items-baseline {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox</h1>
+
+    <h2>Flexbox with Justify Content</h2>
+    <h3>Justify Content: Flex Start (Default)</h3>
+    <div class="container">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Justify Content: Flex End</h3>
+    <div class="container justify-end">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+
+    <hr />
+    <h3>Justify Content: Flex Center</h3>
+    <div class="container justify-center">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Justify Content: Flex Space Between</h3>
+    <div class="container justify-space-between">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Justify Content: Flex Space Around</h3>
+    <div class="container justify-space-around">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Justify Content: Flex Space Evenly</h3>
+    <div class="container justify-space-evenly">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <hr />
+    <h2>Flexbox with Align Items</h2>
+    <h3>Align Items: Stretch (Default)</h3>
+    <div class="container align-items-stretch">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Align Items: Start</h3>
+    <div class="container align-items-start">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+
+    <hr />
+    <h3>Align Items: End</h3>
+    <div class="container align-items-end">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Align Items: Center</h3>
+    <div class="container align-items-center">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <h3>Align Items: Baseline</h3>
+    <div class="container align-items-baseline">
+      <div class="item violet">Violet</div>
+      <div class="item indigo">Indigo</div>
+      <div class="item blue">Blue</div>
+      <div class="item green">Green</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item orange">Orange</div>
+      <div class="item red">Red</div>
+    </div>
+    <hr />
+    <hr />
+  </body>
+</html>
